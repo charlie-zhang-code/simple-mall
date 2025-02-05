@@ -24,9 +24,17 @@
 
         <!-- Database -->
         <druid.version>1.2.23</druid.version>
+
+        <knife4j.version>4.4.0</knife4j.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+            <version>${knife4j.version}</version>
+        </dependency>
+
         <!-- Spring Boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
