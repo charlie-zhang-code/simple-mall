@@ -64,7 +64,7 @@
             <option name="needSerializable" value="true" />
             <option name="needsModel" value="true" />
             <option name="relativePackage" value="model.entity" />
-            <option name="superClass" value="" />
+            <option name="superClass" value="io.github.charlie.base.BaseEntity" />
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>

@@ -4,8 +4,8 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import io.github.charlie.base.BaseEntity;
 import java.io.Serializable;
-import java.util.Date;
 import lombok.Data;
 
 /**
@@ -13,7 +13,7 @@ import lombok.Data;
  */
 @TableName(value ="sys_question")
 @Data
-public class Question implements Serializable {
+public class Question extends BaseEntity implements Serializable {
     private Long id;
 
     private Long productId;
@@ -27,18 +27,6 @@ public class Question implements Serializable {
     private String content;
 
     private Integer state;
-
-    private Integer status;
-
-    private String remark;
-
-    private Date createAt;
-
-    private Long createBy;
-
-    private Date updateAt;
-
-    private Long updateBy;
 
     private static final long serialVersionUID = 1L;
 }
