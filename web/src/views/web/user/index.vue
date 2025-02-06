@@ -1,13 +1,17 @@
 <script setup lang="ts">
-
+// $route.params.id
 </script>
 
 <template>
-  <div class="flex flex-col">
-    用户详情页  {{ $route.params.id }}
+  <div class="flex flex-col gap-4">
+    <el-image class="w-full h-200px" src="https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
+      fit="cover" />
+    <div class="flex flex-col items-center gap-2">
+      <el-avatar :size="50" />
+      <el-text size="large">用户名</el-text>
+      <el-text>网龄 5 个月</el-text>
+    </div>
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
