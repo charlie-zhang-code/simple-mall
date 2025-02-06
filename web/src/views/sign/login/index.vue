@@ -4,7 +4,7 @@
 
 <template>
   <div class="flex flex-col">
-    订单详情页面  {{ $route.params.id }}
+    登录页面
   </div>
 </template>
 

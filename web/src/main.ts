@@ -4,6 +4,7 @@ import App from "@/App.vue";
 import { setupRouter } from "./router";
 import { setupPinia } from "./stores";
 import 'virtual:uno.css'
+import 'element-plus/dist/index.css'
 
 async function setupApp() {
   const app = createApp(App);

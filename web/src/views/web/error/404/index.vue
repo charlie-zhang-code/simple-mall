@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="flex flex-col">
-    订单详情页面  {{ $route.params.id }}
+  <div class="flex justify-center items-center">
+    404
   </div>
 </template>
 
