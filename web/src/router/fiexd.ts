@@ -4,12 +4,12 @@ import { RouteRecordRaw } from "vue-router";
 export const routes: RouteRecordRaw[] = [
     {
         path: '/',
-        name: 'webroot',
-        redirect: '/root',
+        name: 'root',
+        redirect: '/web',
         children: [
             {
-                path: '/root',
-                name: 'root',
+                path: '/web',
+                name: 'web',
                 component: Web,
                 redirect: '/home',
                 children: [
@@ -17,6 +17,21 @@ export const routes: RouteRecordRaw[] = [
                         path: '/home',
                         name: 'home',
                         component: () => import('../views/web/index.vue')
+                    },
+                    {
+                        path: '/search',
+                        name: 'search',
+                        component: () => import('../views/web/search/index.vue')
+                    },
+                    {
+                        path: '/product',
+                        name: 'product',
+                        component: () => import('../views/web/product/index.vue')
+                    },
+                    {
+                        path: '/order',
+                        name: 'order',
+                        component: () => import('../views/web/order/index.vue')
                     },
                     {
                         path: '/test',

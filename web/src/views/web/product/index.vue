@@ -4,7 +4,7 @@
 
 <template>
   <div class="flex flex-col">
-    <Recommend />
+    商品详情页面
   </div>
 </template>
 
